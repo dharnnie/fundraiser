@@ -79,7 +79,7 @@ func (p *Payload) SendMessage() {
 }
 
 func connect() *mgo.Session {
-	session, err := mgo.Dial("mongodb://dharnnie:dharnniefunds@ds153412.mlab.com:53412/funds")
+	session, err := mgo.Dial("mlabdatabase URL") // When I make a tutorial of this, I'll show you how to create a dummy database on mlab.com and reference here!
 	if err != nil {
 		log.Println("Could not Dial DB", err)
 	}
